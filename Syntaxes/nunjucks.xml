@@ -77,15 +77,15 @@
                 <strings>
                     <string>if</string>
                     <string>else</string>
-                    <string> elif</string>
-                    <string> endif</string>
-                    <string> is</string>
-                    <string> not</string>
+                    <string>elif</string>
+                    <string>endif</string>
+                    <string>is</string>
+                    <string>not</string>
                     
                     <string>for</string>
-                    <string> in</string>
-                    <string> recursive</string>
-                    <string> endfor</string>
+                    <string>in</string>
+                    <string>recursive</string>
+                    <string>endfor</string>
                     
                     <string>raw</string>
                     <string> endraw</string>
