@@ -16,5 +16,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Initial commit
 
-[uunreleased]: https://github.com/alienlebarge/nunjucks.novaextension/compare/v0.0.1...HEAD
+[Unreleased]: https://github.com/alienlebarge/nunjucks.novaextension/compare/v0.0.1...HEAD
 [0.0.1]: https://github.com/alienlebarge/nunjucks.novaextension/releases/tag/v0.0.1
