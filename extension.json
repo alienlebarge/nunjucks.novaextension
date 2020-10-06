@@ -1,0 +1,8 @@
+{
+    "identifier": "org.nunjucks",
+    "name": "nunjucks",
+    "organization": "MyOrganization",
+    "description": "Lorem ipsum, dolor sit amet.",
+    "version": "1.0",
+    "categories": ["languages"]
+}
