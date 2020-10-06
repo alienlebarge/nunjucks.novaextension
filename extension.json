@@ -2,7 +2,9 @@
   "identifier": "org.nunjucks",
   "name": "nunjucks",
   "organization": "MyOrganization",
-  "description": "Lorem ipsum, dolor sit amet.",
+  "description": "Nunjucks syntax highlighting",
   "version": "0.0.1",
-  "categories": ["languages"]
+  "categories": ["languages"],
+  "repository": "https://github.com/alienlebarge/nunjucks.novaextension",
+  "bug": "https://github.com/alienlebarge/nunjucks.novaextension/issues"
 }
