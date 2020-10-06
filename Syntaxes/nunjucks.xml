@@ -5,7 +5,7 @@
         <type>markup</type>
         <preferred-file-extension>njk</preferred-file-extension>
         <default-extension>njk</default-extension>
-        <parent>HTML</parent>
+        <parent>html</parent>
     </meta>
     
     <detectors>
