@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <completions>
     <provider>
-        <selector>mylang</selector>
+        <selector>nunjucks</selector>
         <expression>\b[a-zA-Z0-9-_]*</expression>
-        <set>mylang.entities</set>
+        <set>nunjucks.entities</set>
     </provider>
     
     <!-- Entities -->
-    <set name="mylang.entities">
+    <set name="nunjucks.entities">
         <completion string="&quot;" />
         <completion string="&amp;" />
         <completion string="&apos;" />
