@@ -51,6 +51,7 @@
     </surrounding-pairs>
     
     <scopes>
+        <include syntax="html" />
         <include syntax="self" collection="blocks" />
         <include syntax="self" collection="tags" />
         <include syntax="self" collection="filters" />
@@ -63,11 +64,11 @@
             <scope name="nunjucks.block">
                 <starts-with>
                     <expression>\{\#</expression>
-                    <capture number="0" name="njk.block.bracket" />
+                    <capture number="0" name="nunjucks.block.bracket" />
                 </starts-with>
                 <ends-with>
                     <expression>\#\}</expression>
-                    <capture number="0" name="njk.block.bracket" />
+                    <capture number="0" name="nunjucks.block.bracket" />
                 </ends-with>
             </scope>
         </collection>
@@ -76,56 +77,57 @@
         <collection name="tags">
             <scope name="nunjucks.tag">
                 <strings>
+                    <!-- if -->
                     <string>if</string>
                     <string>else</string>
                     <string>elif</string>
                     <string>endif</string>
                     <string>is</string>
                     <string>not</string>
-                    
+                    <!-- for -->
                     <string>for</string>
                     <string>in</string>
                     <string>recursive</string>
                     <string>endfor</string>
-                    
+                    <!-- raw -->
                     <string>raw</string>
-                    <string> endraw</string>
-                    
+                    <string>endraw</string>
+                    <!-- block -->
                     <string>block</string>
                     <string>endblock</string>
                     <string>extends</string>
                     <string>super</string>
                     <string>scoped</string>
-                    
+                    <!-- macro -->
                     <string>macro</string>
                     <string>endmacro</string>
                     <string>call</string>
                     <string>endcall</string>
-                    
+                    <!--actions -->
                     <string>from</string>
                     <string>import</string>
                     <string>as</string>
                     <string>do</string>
                     <string>continue</string>
                     <string>break</string>
-                    
+                    <!-- filter -->
                     <string>filter</string>
                     <string>endfilter</string>
                     <string>set</string>
-                    
+                    <!-- include -->
                     <string>include</string>
                     <string>ignore</string>
                     <string>missing</string>
-                    
+                    <!-- with -->
                     <string>with</string>
                     <string>without</string>
                     <string>context</string>
                     <string>endwith</string>
-                    
+                    <!-- trans -->
                     <string>trans</string>
                     <string>endtrans</string>
                     <string>pluralize</string>
-                    
+                    <!-- escaping -->
                     <string>autoescape</string>
                     <string>endautoescape</string>
                 </strings>
