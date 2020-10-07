@@ -85,49 +85,39 @@
                     <!-- for -->
                     <string>for</string>
                     <string>in</string>
-                    <string>recursive</string>
                     <string>endfor</string>
-                    <!-- raw -->
-                    <string>raw</string>
-                    <string>endraw</string>
-                    <!-- block -->
-                    <string>block</string>
-                    <string>endblock</string>
-                    <string>extends</string>
-                    <string>super</string>
-                    <string>scoped</string>
+                    <!-- asyncEach -->
+                    <string>asyncEach</string>
+                    <string>endeach</string>
+                    <!-- asyncAll -->
+                    <string>asyncAll</string>
+                    <string>endall</string>
                     <!-- macro -->
                     <string>macro</string>
                     <string>endmacro</string>
-                    <string>call</string>
-                    <string>endcall</string>
-                    <!--actions -->
-                    <string>from</string>
-                    <string>import</string>
-                    <string>as</string>
-                    <string>do</string>
-                    <string>continue</string>
-                    <string>break</string>
-                    <!-- filter -->
-                    <string>filter</string>
-                    <string>endfilter</string>
+                    <!-- set -->
                     <string>set</string>
+                    <string>endset</string>
+                    <!-- extends -->
+                    <string>extends</string>
+                    <!-- block -->
+                    <string>block</string>
+                    <string>endblock</string>
                     <!-- include -->
                     <string>include</string>
                     <string>ignore</string>
                     <string>missing</string>
-                    <!-- with -->
-                    <string>with</string>
-                    <string>without</string>
-                    <string>context</string>
-                    <string>endwith</string>
-                    <!-- trans -->
-                    <string>trans</string>
-                    <string>endtrans</string>
-                    <string>pluralize</string>
-                    <!-- escaping -->
-                    <string>autoescape</string>
-                    <string>endautoescape</string>
+                    <!-- import -->
+                    <string>import</string>
+                    <!-- raw -->
+                    <string>raw</string>
+                    <!-- verbatim -->
+                    <string>verbatime</string>
+                    <!-- filter -->
+                    <string>filter</string>
+                    <!-- call -->
+                    <string>call</string>
+                    <string>endcall</string>
                 </strings>
             </scope>
         </collection>
