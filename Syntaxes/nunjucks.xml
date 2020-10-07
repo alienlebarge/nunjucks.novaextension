@@ -53,6 +53,7 @@
     <scopes>
         <include syntax="self" collection="blocks" />
         <include syntax="self" collection="tags" />
+        <include syntax="self" collection="global-functions" />
         <include syntax="self" collection="filters" />
     </scopes>    
     
@@ -118,6 +119,17 @@
                     <!-- call -->
                     <string>call</string>
                     <string>endcall</string>
+                </strings>
+            </scope>
+        </collection>
+        
+        <!-- Global Function -->
+        <collection name="global-functions">
+            <scope name="nunjuck.global-function">
+                <strings>
+                    <string>range</string>
+                    <string>cycler</string>
+                    <string>joiner</string>
                 </strings>
             </scope>
         </collection>
