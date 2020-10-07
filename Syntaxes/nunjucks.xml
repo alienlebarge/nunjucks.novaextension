@@ -127,49 +127,46 @@
             <scope name="nunjucks.filter">
                 <strings>
                     <string>abs</string>
-                    <string>attr</string>
                     <string>batch</string>
                     <string>capitalize</string>
                     <string>center</string>
                     <string>default</string>
-                    
                     <string>dictsort</string>
+                    <string>dump</string>
                     <string>escape</string>
-                    <string>filesizeformat</string>
                     <string>first</string>
                     <string>float</string>
                     <string>forceescape</string>
-                    <string>format</string>
                     <string>groupby</string>
                     <string>indent</string>
-                    
                     <string>int</string>
                     <string>join</string>
                     <string>last</string>
                     <string>length</string>
                     <string>list</string>
                     <string>lower</string>
-                    <string>pprint</string>
-                    
+                    <string>nl2br</string>
                     <string>random</string>
+                    <string>reject</string>
+                    <string>rejectattr</string>
                     <string>replace</string>
                     <string>reverse</string>
                     <string>round</string>
                     <string>safe</string>
+                    <string>select</string>
+                    <string>selectattr</string>
                     <string>slice</string>
-                    
                     <string>sort</string>
                     <string>string</string>
                     <string>striptags</string>
                     <string>sum</string>
-                    
                     <string>title</string>
                     <string>trim</string>
                     <string>truncate</string>
                     <string>upper</string>
+                    <string>urlencode</string>
                     <string>urlize</string>
                     <string>wordcount</string>
-                    <string>wordwrap</string>
                 </strings>
             </scope>
         </collection>
