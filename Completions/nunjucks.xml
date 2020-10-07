@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <completions>
     <provider>
-        <selector>nunjucks</selector>
+        <selector>nunjucks-html</selector>
         <expression>\b[a-zA-Z0-9-_]*</expression>
-        <set>nunjucks.entities</set>
+        <set>nunjucks.tag</set>
+        <set>nunjucks.filter</set>
     </provider>
     
     <!-- Entities -->
