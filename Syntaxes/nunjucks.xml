@@ -7,11 +7,11 @@
         <default-extension>njk</default-extension>
         <parent>html</parent>
     </meta>
-    
+
     <detectors>
         <extension priority="1.0">njk,nunjucks</extension>
     </detectors>
-    
+
     <indentation>
         <increase>
             <expression>^\s*&lt;(([^!/?]|%)(?!.+?([/%]&gt;|&lt;/.+?&gt;))|[%!]--\s*$)</expression>
@@ -20,7 +20,7 @@
             <expression>^\s*(&lt;/[^&gt;]+&gt;|--&gt;|--%&gt;)</expression>
         </decrease>
     </indentation>
-    
+
     <comments>
         <multiline>
             <starts-with>
@@ -31,13 +31,13 @@
             </ends-with>
         </multiline>
     </comments>
-    
+
     <brackets>
         <pair open="{{" close="}}" />
         <pair open="{%" close="%}" />
         <pair open="{#" close="#}" />
     </brackets>
-    
+
     <surrounding-pairs>
         <pair open="&lt;" close="&gt;" />
         <pair open="{{" close="}}" />
@@ -49,14 +49,14 @@
         <pair open="&quot;" close="&quot;" />
         <pair open="`" close="`" />
     </surrounding-pairs>
-    
+
     <scopes>
         <include syntax="self" collection="blocks" />
         <include syntax="self" collection="tags" />
         <include syntax="self" collection="global-functions" />
         <include syntax="self" collection="filters" />
-    </scopes>    
-    
+    </scopes>
+
     <collections>
         <!-- Blocks -->
         <collection name="blocks">
@@ -71,7 +71,7 @@
                 </ends-with>
             </scope>
         </collection>
-        
+
         <!-- Keywords -->
         <collection name="tags">
             <scope name="nunjucks.tag">
@@ -122,7 +122,7 @@
                 </strings>
             </scope>
         </collection>
-        
+
         <!-- Global Function -->
         <collection name="global-functions">
             <scope name="nunjuck.global-function">
@@ -133,7 +133,7 @@
                 </strings>
             </scope>
         </collection>
-        
+
         <!-- Filters -->
         <collection name="filters">
             <scope name="nunjucks.filter">

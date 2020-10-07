@@ -1,17 +1,17 @@
 {
-  "identifier": "alienlebarge.nunjucks",
-  "name": "nunjucks",
-  "organization": "alienlebarge",
-  "description": "Nunjucks syntax highlighting",
-  "version": "0.0.1",
-  "categories": ["languages"],
-  "keywords": ["nunjucks"],
-  "activationEvents": [
-    "onLanguage:njk",
-    "onLanguage:nunjucks",
-    "onWorkspaceContains:*.njk",
-    "onWorkspaceContains:*.nunjucks"
-  ],
-  "repository": "https://github.com/alienlebarge/nunjucks.novaextension",
-  "bug": "https://github.com/alienlebarge/nunjucks.novaextension/issues"
+    "identifier": "alienlebarge.nunjucks",
+    "name": "nunjucks",
+    "organization": "alienlebarge",
+    "description": "Nunjucks syntax highlighting",
+    "version": "0.0.1",
+    "categories": ["languages"],
+    "keywords": ["nunjucks"],
+    "activationEvents": [
+        "onLanguage:njk",
+        "onLanguage:nunjucks",
+        "onWorkspaceContains:*.njk",
+        "onWorkspaceContains:*.nunjucks"
+    ],
+    "repository": "https://github.com/alienlebarge/nunjucks.novaextension",
+    "bug": "https://github.com/alienlebarge/nunjucks.novaextension/issues"
 }

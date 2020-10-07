@@ -7,11 +7,11 @@
         <default-extension>njk</default-extension>
         <parent>html</parent>
     </meta>
-    
+
     <detectors>
         <extension priority="1.0">njk,nunjucks</extension>
     </detectors>
-    
+
     <indentation>
         <increase>
             <expression>^\s*&lt;(([^!/?]|%)(?!.+?([/%]&gt;|&lt;/.+?&gt;))|[%!]--\s*$)</expression>
@@ -20,7 +20,7 @@
             <expression>^\s*(&lt;/[^&gt;]+&gt;|--&gt;|--%&gt;)</expression>
         </decrease>
     </indentation>
-    
+
     <comments>
         <multiline>
             <starts-with>
@@ -31,13 +31,13 @@
             </ends-with>
         </multiline>
     </comments>
-    
+
     <brackets>
         <pair open="{{" close="}}" />
         <pair open="{%" close="%}" />
         <pair open="{#" close="#}" />
     </brackets>
-    
+
     <surrounding-pairs>
         <pair open="&lt;" close="&gt;" />
         <pair open="{{" close="}}" />
@@ -49,12 +49,12 @@
         <pair open="&quot;" close="&quot;" />
         <pair open="`" close="`" />
     </surrounding-pairs>
-    
+
     <scopes>
         <include syntax="self" collection="blocks" />
         <include syntax="html" />
     </scopes>
-    
+
     <template-scopes>
         <!-- Variables scope -->
         <scope name="nunjucks.tag.framework">
@@ -72,7 +72,7 @@
                 </cut-off>
             </subsyntax>
         </scope>
-        
+
         <!-- Expressions scope -->
         <scope name="nunjucks.tag.framework">
             <starts-with>
@@ -90,7 +90,7 @@
             </subsyntax>
         </scope>
     </template-scopes>
-    
+
     <collections>
         <!-- Blocks -->
         <collection name="blocks">

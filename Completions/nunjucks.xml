@@ -6,7 +6,7 @@
         <set>nunjucks.tag</set>
         <set>nunjucks.filter</set>
     </provider>
-    
+
     <!-- Entities -->
     <set name="nunjucks.entities">
         <completion string="&quot;" />
