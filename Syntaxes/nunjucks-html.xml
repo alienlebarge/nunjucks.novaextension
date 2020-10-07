@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="nunjucks-html">
+    <meta>
+        <name>Nunjucks HTML</name>
+        <type>markup</type>
+        <preferred-file-extension>njk</preferred-file-extension>
+        <default-extension>njk</default-extension>
+        <parent>html</parent>
+    </meta>
+    
+    <detectors>
+        <extension priority="1.0">njk,nunjucks</extension>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>^\s*&lt;(([^!/?]|%)(?!.+?([/%]&gt;|&lt;/.+?&gt;))|[%!]--\s*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(&lt;/[^&gt;]+&gt;|--&gt;|--%&gt;)</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <multiline>
+            <starts-with>
+                <expression>{#</expression>
+            </starts-with>
+            <ends-with>
+                <expression>#}</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <brackets>
+        <pair open="{{" close="}}" />
+        <pair open="{%" close="%}" />
+        <pair open="{#" close="#}" />
+    </brackets>
+    
+    <surrounding-pairs>
+        <pair open="&lt;" close="&gt;" />
+        <pair open="{{" close="}}" />
+        <pair open="{%" close="%}" />
+        <pair open="{#" close="#}" />
+        <pair open="[" close="]" />
+        <pair open="(" close=")" />
+        <pair open="&apos;" close="&apos;" />
+        <pair open="&quot;" close="&quot;" />
+        <pair open="`" close="`" />
+    </surrounding-pairs>
+    
+    <scopes>
+        <include syntax="self" collection="blocks" />
+        <include syntax="html" />
+    </scopes>
+    
+    <template-scopes>
+        <!-- Variables scope -->
+        <scope name="nunjucks.tag.framework">
+            <starts-with>
+                <expression>\{\{</expression>
+                <capture number="0" name="nunjucks.tag.framework.variable.start" />
+            </starts-with>
+            <ends-with>
+                <expression>\}\}</expression>
+                <capture number="0" name="nunjucks.tag.framework.variable.end" />
+            </ends-with>
+            <subsyntax name="nunjucks">
+                <cut-off>
+                    <expression>(?=\}\})</expression>
+                </cut-off>
+            </subsyntax>
+        </scope>
+        
+        <!-- Expressions scope -->
+        <scope name="nunjucks.tag.framework">
+            <starts-with>
+                <expression>\{\%</expression>
+                <capture number="0" name="nunjucks.tag.framework.expression.start" />
+            </starts-with>
+            <ends-with>
+                <expression>\%\}</expression>
+                <capture number="0" name="nunjucks.tag.framework.expression.end" />
+            </ends-with>
+            <subsyntax name="nunjucks">
+                <cut-off>
+                    <expression>(?=\#\})</expression>
+                </cut-off>
+            </subsyntax>
+        </scope>
+    </template-scopes>
+    
+    <collections>
+        <!-- Blocks -->
+        <collection name="blocks">
+            <scope name="nunjucks.block">
+                <starts-with>
+                    <expression>{#</expression>
+                    <capture number="0" name="nunjucks.block.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>#}</expression>
+                    <capture number="0" name="nunjucks.block.bracket" />
+                </ends-with>
+            </scope>
+        </collection>
+    </collections>
+</syntax>

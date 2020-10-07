@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<syntax name="nunjucks">
+<syntax name="nunjucks" subsyntax="true">
     <meta>
         <name>Nunjucks</name>
         <type>markup</type>
@@ -34,8 +34,8 @@
     
     <brackets>
         <pair open="{{" close="}}" />
-        <pair open="{\%" close="\%}" />
-        <pair open="{\#" close="\#}" />
+        <pair open="{%" close="%}" />
+        <pair open="{#" close="#}" />
     </brackets>
     
     <surrounding-pairs>
@@ -51,14 +51,12 @@
     </surrounding-pairs>
     
     <scopes>
-        <include syntax="html" />
         <include syntax="self" collection="blocks" />
         <include syntax="self" collection="tags" />
         <include syntax="self" collection="filters" />
     </scopes>    
     
     <collections>
-    
         <!-- Blocks -->
         <collection name="blocks">
             <scope name="nunjucks.block">
@@ -185,6 +183,5 @@
                 </strings>
             </scope>
         </collection>
-        
     </collections>
 </syntax>
