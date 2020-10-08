@@ -51,11 +51,19 @@
     </surrounding-pairs>
 
     <scopes>
-        <include syntax="self" collection="blocks" />
         <include syntax="html" />
     </scopes>
 
     <template-scopes>
+        <!-- Comment block scope -->
+        <scope name="nunjucks.comment.block" spell-check="true">
+                <starts-with>
+                    <expression>\{\#</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>\#\}</expression>
+                </ends-with>
+        </scope>
         <!-- Variables scope -->
         <scope name="nunjucks.tag.framework">
             <starts-with>
@@ -85,25 +93,9 @@
             </ends-with>
             <subsyntax name="nunjucks">
                 <cut-off>
-                    <expression>(?=\#\})</expression>
+                    <expression>(?=\%\})</expression>
                 </cut-off>
             </subsyntax>
         </scope>
     </template-scopes>
-
-    <collections>
-        <!-- Blocks -->
-        <collection name="blocks">
-            <scope name="nunjucks.block">
-                <starts-with>
-                    <expression>{#</expression>
-                    <capture number="0" name="nunjucks.block.bracket" />
-                </starts-with>
-                <ends-with>
-                    <expression>#}</expression>
-                    <capture number="0" name="nunjucks.block.bracket" />
-                </ends-with>
-            </scope>
-        </collection>
-    </collections>
 </syntax>

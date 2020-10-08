@@ -58,20 +58,6 @@
     </scopes>
 
     <collections>
-        <!-- Blocks -->
-        <collection name="blocks">
-            <scope name="nunjucks.block">
-                <starts-with>
-                    <expression>\{\#</expression>
-                    <capture number="0" name="nunjucks.block.bracket" />
-                </starts-with>
-                <ends-with>
-                    <expression>\#\}</expression>
-                    <capture number="0" name="nunjucks.block.bracket" />
-                </ends-with>
-            </scope>
-        </collection>
-
         <!-- Keywords -->
         <collection name="tags">
             <scope name="nunjucks.tag">
