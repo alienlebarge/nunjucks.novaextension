@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <syntax name="nunjucks-html">
     <meta>
-        <name>Nunjucks HTML</name>
+        <name>HTML (Nunjucks)</name>
         <type>markup</type>
         <preferred-file-extension>njk</preferred-file-extension>
         <default-extension>njk</default-extension>
