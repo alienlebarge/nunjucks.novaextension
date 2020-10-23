@@ -13,3 +13,28 @@
     {% endfor %}
 </ul>
 {% endblock %}
+
+{{ foo | title }}
+{{ foo | join(",") }}
+{{ foo | replace("foo", "bar") | capitalize }}
+
+{{ foo(1, 2, bar=3, baz=4) }}
+{{ bar | transform(level=2) }}
+
+{% extends "base.html" %}
+
+{% block header %}
+<h3>{{ subtitle }}</h3>
+{% endblock %}
+
+{% block content %}
+<h1>{{ page.title }}</h1>
+<p>{{ page.content }}</p>
+{% endblock %}
+
+<h1>Posts</h1>
+<ul>
+{% asyncAll item in items %}
+  <li>{{ item.id | lookup }}</li>
+{% endall %}
+</ul>
