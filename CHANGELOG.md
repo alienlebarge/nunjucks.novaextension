@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Fix URL to the extension’s issue reporter
 - Fix size of the extension icon
 - Fix syntax highlight was disappearing when saving a file
 

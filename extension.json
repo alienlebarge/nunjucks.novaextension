@@ -13,5 +13,5 @@
         "onWorkspaceContains:*.nunjucks"
     ],
     "repository": "https://github.com/alienlebarge/nunjucks.novaextension",
-    "bug": "https://github.com/alienlebarge/nunjucks.novaextension/issues"
+    "bugs": "https://github.com/alienlebarge/nunjucks.novaextension/issues"
 }
