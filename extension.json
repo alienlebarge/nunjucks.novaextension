@@ -3,7 +3,7 @@
     "name": "nunjucks",
     "organization": "alienlebarge",
     "description": "Nunjucks syntax highlighting",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "categories": ["languages"],
     "keywords": ["nunjucks"],
     "activationEvents": [
