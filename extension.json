@@ -10,6 +10,7 @@
         "onLanguage:njk",
         "onLanguage:nunjucks",
         "onWorkspaceContains:*.njk",
+        "onWorkspaceContains:*.nunj",
         "onWorkspaceContains:*.nunjucks"
     ],
     "repository": "https://github.com/alienlebarge/nunjucks.novaextension",
